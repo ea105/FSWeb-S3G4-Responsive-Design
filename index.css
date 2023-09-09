@@ -1,0 +1,167 @@
+@import url(./reset.css);
+
+* {
+   /* border: 1px solid lightcoral;*/
+    /*background-color: rgb(173, 216, 230, 0.2);*/ 
+    
+  }
+body{
+    
+    background-color: ;
+    
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    background-color:;
+    min-height: 100vh;
+    max-width: 1080px;
+    margin: 0 auto ;
+}
+
+header{
+    margin: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;}
+
+.menu{
+    display:flex;
+    gap: 0.25rem;
+    margin-top: 1rem;
+}
+.btn,
+.menu__item{
+  background-color:red ;
+  color:black ;
+  padding: 0.5rem 3rem;
+  border-radius: 50px;
+}
+
+.menu__item:hover{
+    background-color: blueviolet;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+
+.hero{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    background-color: bisque;
+    flex-wrap: nowrap;
+}
+
+.hero__content,
+.hero__img{
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+.hero__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center ;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.hero__title{
+    font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project__item{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+@media screen and (max-width:800px){
+
+  .app{
+    background-color: purple;
+    text-align: center;
+    
+  }
+  .header{
+    text-align: center;
+    
+  }
+  
+  .menu{
+    margin-top: 3rem;
+    justify-content: center;
+
+  }
+  .btn,
+  .menu__item {
+    padding: 1rem 2rem;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    background-color: orange;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn,
+  .menu__item {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .hero{
+    flex-wrap: wrap;
+  }
+}
